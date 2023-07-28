@@ -1,0 +1,17 @@
+{
+	"name": "Kalimu",
+	"short_name": "Kalimu",
+	"theme_color": "#473335",
+	"background_color": "#fff",
+	"display": "standalone",
+	"orientation": "portrait",
+	"scope": "/",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "logo_bg.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	]
+}

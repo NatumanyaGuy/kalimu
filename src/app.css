@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: Overpass;
+	src: url(/Overpass.ttf);
+}
+
+* {
+	font-family: Overpass;
+}
+
+#tip_tap h1 {
+	@apply text-xl mt-3;
+}
+#tip_tap h2 {
+	@apply text-lg mt-3;
+}
+#tip_tap h3 {
+	@apply mt-3;
+}
+#tip_tap ul {
+	@apply list-disc ml-5;
+}
+#tip_tap p:empty {
+	@apply pt-2;
+}
+#tip_tap p:has(strong) {
+	@apply mt-1;
+}
+#tip_tap ol {
+	@apply list-decimal ml-5;
+}
+#tip_tap a {
+	@apply underline underline-offset-2 text-primary;
+}
+#tip_tap hr {
+	@apply py-2 my-2;
+}
+
+/* width */
+::-webkit-scrollbar {
+	@apply w-2;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	@apply bg-base-100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	@apply bg-primary cursor-pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-primary-focus;
+}
