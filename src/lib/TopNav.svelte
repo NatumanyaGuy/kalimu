@@ -116,10 +116,7 @@
 	<form method="dialog" class="modal-backdrop">
 		<button
 			bind:this={closeBtn}
-			on:click={() => {
-				searching = false;
-				goto('/search/' + query);
-			}}>close</button
+			>close</button
 		>
 	</form>
 </dialog>

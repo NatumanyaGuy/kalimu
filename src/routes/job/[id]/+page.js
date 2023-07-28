@@ -1,5 +1,6 @@
 // @ts-nocheck
 import { db } from '$lib/firebaseConfig';
+import { error } from '@sveltejs/kit';
 import { doc, getDoc } from 'firebase/firestore';
 
 async function getJob(id) {
@@ -8,7 +9,9 @@ async function getJob(id) {
 	if (docSnap.exists()) {
 		return { ...docSnap.data(), id: id };
 	} else {
-		return null;
+		throw error(404, {
+			message: 'Not found'
+		});
 	}
 }
 
