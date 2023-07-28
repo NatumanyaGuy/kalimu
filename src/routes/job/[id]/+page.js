@@ -1,5 +1,4 @@
 // @ts-nocheck
-export let prerender = true;
 import { db } from '$lib/firebaseConfig';
 import { doc, getDoc } from 'firebase/firestore';
 

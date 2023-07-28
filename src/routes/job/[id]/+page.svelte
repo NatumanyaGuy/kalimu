@@ -8,6 +8,8 @@
 	let job = data.job;
 </script>
 
+
+
 <svelte:head>
 	<title>Kalimu</title>
 	<meta name="title" content="Kalimu" />
@@ -22,6 +24,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content={job?.employer_logoURL} />
 </svelte:head>
+
 
 <div>
 	<JobCard {job} />

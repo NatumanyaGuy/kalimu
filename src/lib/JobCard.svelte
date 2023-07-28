@@ -7,6 +7,7 @@
 	// console.log(job);
 </script>
 
+
 <div
 	class="card card-compact w-full shadow hover:shadow-lg cursor-default border-base-300 border-2"
 	in:fade
