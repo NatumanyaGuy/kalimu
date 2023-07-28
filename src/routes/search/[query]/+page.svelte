@@ -87,6 +87,7 @@
 			bind:value={order}
 			on:change={() => {
 				_jobs_searched.set([]);
+				_lastVisible_search.set(null);
 				jobs = getJobs(search_query);
 			}}
 		>

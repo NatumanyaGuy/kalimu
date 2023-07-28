@@ -62,6 +62,7 @@
 		bind:value={order}
 		on:change={() => {
 			_jobs.set([]);
+			_lastVisible.set(null)
 			jobs = getJobs([]);
 		}}
 	>
