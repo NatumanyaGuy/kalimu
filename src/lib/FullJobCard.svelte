@@ -17,14 +17,14 @@
 >
 	<div class="card-body pb-2 pt-4">
 		<div class="flex flex-row gap-3">
-			<div class="basis-3/4 space-y-1">
-				<p class="text-xl capitalize font-bold" in:fade>
+			<div class="basis-2/3 space-y-1">
+				<p class="text-lg capitalize font-bold" in:fade>
 					{job?.position}
 				</p>
 
 				<div class="divider my-0 py-0" />
 
-				<p class="text-lg font-light line-clamp-2" in:fade>
+				<p class="text-sm font-light line-clamp-2" in:fade>
 					{job?.employer}
 				</p>
 				<p class="text-sm font-light opacity-90" in:fade>
@@ -32,7 +32,7 @@
 				</p>
 			</div>
 			<div
-				class="basis-1/4 p-2 flex items-center justify-center"
+				class="basis-1/3 p-2 flex items-center justify-center"
 				style="background-color: {job?.bg_color}; color:{job?.text_color}"
 			>
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -42,7 +42,7 @@
 						dispatch('preview', {});
 					}}
 					src={job?.employer_logoURL}
-					class="h-auto
+					class="h-fit
 					object-contain
 					 w-full"
 					alt=""

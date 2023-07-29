@@ -21,13 +21,20 @@
 	let order = 'created';
 
 	async function getJobs() {
+		let c = "desc"
+	if(order == "deadline"){
+		c = 'asc'
+	}else{
+		c = 'desc'
+	}
+
 		loading = true;
 		let j = [];
 		let q = query(collection(db, 'jobs'));
 		if (!$_lastVisible) {
-			q = query(collection(db, 'jobs'), orderBy(order), limit(50));
+			q = query(collection(db, 'jobs'), orderBy(order, c), limit(50));
 		} else {
-			q = query(collection(db, 'jobs'), orderBy(order), startAfter($_lastVisible), limit(50));
+			q = query(collection(db, 'jobs'), orderBy(order, c), startAfter($_lastVisible), limit(50));
 		}
 
 		//Execute Query

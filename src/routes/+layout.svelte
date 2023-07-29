@@ -71,7 +71,7 @@
 	{/if}
 
 	<Toaster theme="dark" />
-	<main class="p-3 {_page == '/' ? 'mt-16' : ''}" in:fade>
+	<main class="p-3 bg-base-300 {_page == '/' ? 'mt-16' : ''}" in:fade>
 		<!-- <p>{JSON.stringify(pp)}</p> -->
 		<slot />
 	</main>
