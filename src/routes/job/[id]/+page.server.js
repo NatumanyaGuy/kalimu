@@ -19,6 +19,6 @@ export let load = async ({ params }) => {
 	let id = params.id;
 	let job = await getJob(id);
 	return {
-		job
+		job: JSON.parse(JSON.stringify(job))
 	};
 };

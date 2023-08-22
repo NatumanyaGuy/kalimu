@@ -26,10 +26,12 @@
 </svelte:head>
 
 
-<div>
-	<JobCard {job} />
+<div class="flex lg:flex-row-reverse flex-col gap-4">
+	<div class="basis-1/3">
+		<JobCard {job} />
+	</div>
 
-	<div class="p-4 mt-4 rounded-lg bg-base-200 shadow" id="tip_tap">
+	<div class="basis-2/3 p-4 mt-4 rounded-lg bg-base-100 shadow" id="tip_tap">
 		{@html job?.details}
 	</div>
 </div>
