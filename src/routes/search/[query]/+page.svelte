@@ -98,7 +98,7 @@
 	</div>
 
 	{#await jobs}
-		<div class="space-y-2 flex flex-col">
+		<div class="space-y-2 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
 			{#each { length: 5 } as c}
 				<div class="h-44 rounded-lg bg-base-200 animate-pulse" />
 			{/each}
@@ -119,9 +119,12 @@
 					>
 				</div>
 			{:else}
+			<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
 				{#each $_jobs_searched as job}
-					<FullJobCard {job} />
-				{/each}
+				<FullJobCard {job} />
+			{/each}
+			</div>
+				
 				<div class="flex flex-row justify-center my-2">
 					<button
 						disabled={loading}

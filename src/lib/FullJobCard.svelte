@@ -11,7 +11,7 @@
 </script>
 
 <div
-	class="card rounded-xl w-full shadow hover:shadow-lg cursor-default"
+	class="card rounded-xl w-full shadow hover:shadow-lg transition-shadow cursor-default"
 	in:fade
 	style="background-color: {job?.bg_color}; color:{job?.text_color}"
 >
@@ -22,9 +22,9 @@
 					{job?.position}
 				</p>
 
-				<div class="divider my-0 py-0" />
+				<!-- <div class="divider my-0 py-0" /> -->
 
-				<p class="text-sm font-light line-clamp-2" in:fade>
+				<p class="text-sm font-semibold line-clamp-2" in:fade>
 					{job?.employer}
 				</p>
 				<p class="text-sm font-light opacity-90" in:fade>
